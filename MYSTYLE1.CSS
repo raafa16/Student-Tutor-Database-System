@@ -1,0 +1,132 @@
+
+/*----------------------------------------------
+CSS Settings For HTML Div ExactCenter
+------------------------------------------------*/
+#main {
+    width:1060px;
+    margin:0px auto;
+    font-family:raleway
+}
+span {
+    color:red
+}
+h2 {
+    background-color:#FEFFED;
+    text-align: justify;
+    border-radius:20px 20px 0 0;
+    margin:-10px -40px;
+    padding:15px;
+}
+
+hr {
+    border:10px;
+    border-bottom:1px solid #ccc;
+    margin:10px -40px;
+    margin-bottom:30px
+}
+#login {
+    width:500px;
+    float:left;
+    border-radius:10px;
+    font-family:raleway;
+    border:2px solid #ccc;
+    padding:10px 40px 25px;
+    margin-top:70px
+}
+
+#login_form {
+    width:300px;
+    border-radius:5px;
+    font-family:raleway;
+    border:2px solid #CC0000;
+    padding:10px 40px 25px;
+    margin-top:70px
+}
+input[type=text],input[type=password], input[type=number]{
+    width:99.5%;
+    padding:10px;
+    margin-top:8px;
+    border:1px solid #ccc;
+    padding-left:5px;
+    font-size:16px;
+    font-family:raleway
+}
+
+input[type=submit] {
+    width:100%;
+    background-color:#FFBC00;
+    color:#fff;
+    border:2px solid #FFCB00;
+    padding:10px;
+    font-size:20px;
+    cursor:pointer;
+    border-radius:5px;
+    margin-bottom:15px
+}
+
+button[type=submit] {
+    width:100%;
+    background-color:#FFBC00;
+    color:#fff;
+    border:2px solid #FFCB00;
+    padding:10px;
+    font-size:20px;
+    cursor:pointer;
+    border-radius:5px;
+    margin-bottom:15px
+}
+
+#home {
+    padding:50px;
+    border:1px dashed grey;
+    font-size:20px;
+    background-color:#DCE6F7
+}
+#logout {
+    float:right;
+    padding:0px;
+    border:dashed 0px gray
+}
+a {
+    text-decoration:underline;
+    color:#6495ed
+}
+i {
+    font-size: small;
+    color:#6495ed
+}
+
+/*ul {margin: 0; padding: 0;
+    list-style-type: none; list-style-image: none; }
+li {display: inline; padding: 5px 20px 5px 20px}*/
+a {text-decoration:underline; color: brown; }
+a:hover {color: purple; }
+
+
+.topcorner{
+     position:absolute;
+     top:0;
+     right:0;
+ }
+
+.middlecorner{
+
+    position:absolute;
+    top:100px;
+    right:450px;
+
+}
+
+.bottomcorner{
+
+    position: fixed;
+    bottom:0px;
+    right:0px;
+}
+
+li {
+
+    list-style-type: circle;
+    text-decoration: none;
+    color: black;
+}

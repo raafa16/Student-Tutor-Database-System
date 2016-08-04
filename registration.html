@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<script>
+    function checkPass()
+    {
+        //courtesy of keith's code
+        //Store the password field objects into variables ...
+        var pass1 = document.getElementById('password');
+        var pass2 = document.getElementById('confirm_password');
+        //Store the Confirmation Message Object ...
+        var message = document.getElementById('confirmMessage');
+        //Set the colors we will be using ...
+        var goodColor = "#66cc66";
+        var badColor = "#ff6666";
+        //Compare the values in the password field
+        //and the confirmation field
+        if(pass1.value == pass2.value){
+            //The passwords match.
+            //Set the color to the good color and inform
+            //the user that they have entered the correct password
+            pass2.style.backgroundColor = goodColor;
+            message.style.color = goodColor;
+            message.innerHTML = "Passwords Match!"
+        }else{
+            //The passwords do not match.
+            //Set the color to the bad color and
+            //notify the user.
+            pass2.style.backgroundColor = badColor;
+            message.style.color = badColor;
+            message.innerHTML = "Passwords Do Not Match!"
+        }
+    }
+</script>
+
+<style>
+    div {
+        background-color:#FEFFED;
+        text-align: justify;
+        border-radius:40px 40px 0 0;
+        margin:-10px -40px;
+    }
+
+    label
+    {
+        text-decoration: underline;
+        font-weight: bold;v
+    }
+
+    input[type=date]{
+        width:99.5%;
+        padding:10px;
+        margin-top:8px;
+        border:1px solid #ccc;
+        padding-left:5px;
+        font-size:16px;
+        font-family:raleway
+    }
+
+</style>
+
+<head>
+    <title>Login Form</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="mystyle1.css" rel="stylesheet" type="text/css">
+</head>
+<body style="background-color: blanchedalmond">
+<div id="main">
+    <div id="login">
+        <h2 style = " margin:0px 20px; text-decoration: underline">Student Login Form</h2>
+        <form action="registration.php" method="post">
+            <br>
+            <br>
+            <label>Username :</label>
+            <br>
+            <input id="name" name="Username" placeholder="username (your e-mail)" type="text">
+            <br>
+            <br>
+            <label>Password :</label>
+            <br>
+            <input id="password" name="Password" placeholder="password" type="password">
+            <br>
+            <br>
+            <label>Confirm Password :</label>
+            <br>
+            <input id="confirm_password" name="Confirm_password" placeholder="confirm password" type="password" onkeyup="checkPass(); return false;">
+            <span id="confirmMessage" class="confirmMessage"></span>
+            <br>
+            <br>
+            <label>First name :</label>
+            <br>
+            <input id="first_name" name="First_name" placeholder="first name" type="text">
+            <br>
+            <br>
+            <label>Last name :</label>
+            <br>
+            <input id="last_name" name="Last_name" placeholder="last name" type="text">
+            <br>
+            <br>
+            <label>Gender :</label>
+            <br>
+            <select name="list1">
+                <option value="">---------</option>
+                <option value="M">M</option>
+                <option value="F">F</option>
+            </select>
+            <br>
+            <br>
+            <label >Birth Date :</label>
+            <br>
+            <input id="date" name="Date" type="date">
+            <br>
+            <label>Age :</label>
+            <br>
+            <input id="age" name="Age" placeholder="age" type="number">
+            <br>
+            <br>
+            <label>Phone Number :</label>
+            <br>
+            <input id="number" name="Number" placeholder="Phone Number" type="tel">
+
+            <br>
+            <br>
+            <label>Region :</label>
+            <br>
+            <select name="list2">
+                <option value="">---------</option>
+                <option value="Dhanmondi">Dhanmondi</option>
+                <option value="Gulshan">Gulshan</option>
+                <option value="Farmgate">Farmgate</option>
+                <option value="Lalmatia">Lalmatia</option>
+                <option value="Mohammadpur">Mohammadpur</option>
+                <option value="Moghbazar">Moghbazar</option>
+            </select>
+            <br>
+            <br>
+            <label>Address :</label>
+            <br>
+            <input id="address" name="Address" placeholder="Address" type="text">
+            <br>
+            <br>
+            <label>Curriculum :</label>
+            <br>
+            <select name="list3">
+                <option value="">---------</option>
+                <option value="Edexcel">Edexcel</option>
+                <option value="Cambridge">Cambridge</option>
+                <option value="National Curriculum">National Curriculum</option>
+            </select>
+            <br>
+            <br>
+            <label>Subjects :</label>
+            <br>
+            <input id="physics" name="sub[]" value="Physics"  type="checkbox">Physics
+            <input id="chemistry" name="sub[]" value ="Chemistry" type="checkbox">Chemistry
+            <input id="math" name="sub[]" value ="Math" type="checkbox">Math
+            <br>
+            <input id="biology" name="sub[]" value = "Biology" type="checkbox">Biology
+            <input id="science" name="sub[]" value="Science" type="checkbox">Science
+            <input id="economics" name="sub[]" value = "Economics" type="checkbox">Economics
+            <input id="accounting" name="sub[]" value = "Accounting" type="checkbox">Accounting
+            <br>
+            <br>
+            <label>Days Per Week :</label>
+            <br>
+            <input id="dpw" name="Dpw" placeholder="Days to tutor per week" type="number">
+            <br>
+            <br>
+            <label>Salary :</label>
+            <br>
+            <input id="salary" name="Salary" placeholder="Enter Salary" type="number">
+            <br>
+            <br>
+            <label>Salary type :</label>
+            <br>
+            <select name="list4">
+                <option value="">---------</option>
+                <option value="daily">Daily</option>
+                <option value="monthly">Monthly</option>
+            </select>
+            <br>
+            <br>
+            <label>School Name :</label>
+            <br>
+            <input id="school_name" name="School_name" placeholder="School name" type="text">
+            <br>
+            <br><label>Class :</label>
+            <br>
+            <select name="list5">
+                <option value="">---------</option>
+                <option value="Playgroup">Playgroup</option>
+                <option value="Nursery">Nursery</option>
+                <option value="Kindergarten">Kindergarten</option>
+                <option value="Class one">Class One</option>
+                <option value="Class two">Class Two</option>
+                <option value="Class three">Class Three</option>
+                <option value="Class four">Class Four</option>
+                <option value="Class five">Class Five</option>
+                <option value="Class six">Class Six</option>
+                <option value="Class seven">Class Seven</option>
+                <option value="Class eight">Class Eight</option>
+                <option value="O-level">O-level</option>
+                <option value="A-level">A-level</option>
+            </select>
+            <br>
+            <br>
+            <label>Preferred Teacher Gender :</label>
+            <br>
+            <select name="list6">
+                <option value="">---------</option>
+                <option value="M">M</option>
+                <option value="F">F</option>
+            </select>
+            <br>
+            <br>
+            <label>Preferred Teacher Institution :</label>
+            <br>
+            <select name="list7">
+                <option value="">---------</option>
+                <option value="NSU">NSU</option>
+                <option value="IBA">IBA</option>
+                <option value="DU">DU</option>
+                <option value="IUB">IUB</option>
+                <option value="AIUB">AIUB</option>
+                <option value="BUET">BUET</option>
+                <option value="English Medium">English Medium</option>
+                <option value="National Curriculum">National Curriculum</option>
+            </select>
+            <br>
+            <br>
+            <label>About :</label>
+            <br>
+            <textarea rows="5" cols="40" id = about name = About></textarea>
+            </textarea>
+            <br>
+            <br>
+            <input name="submit" type="submit" value=" Register ">
+            <br>
+            <br>
+            <span><?php echo $error; ?></span>
+        </form>
+
+    </div>
+</div>
+</body>
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
